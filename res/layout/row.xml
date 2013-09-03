@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/twdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="3dip"
+        android:maxLines="1"
+        android:text="Date"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/twusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dip"
+        android:maxLines="1"
+        android:text="UserName"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/twimage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/twusername"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="3dip"
+        android:src="@android:drawable/sym_def_app_icon" >       
+    </ImageView>
+    
+      <ProgressBar
+        style="@android:style/Widget.ProgressBar.Large"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/twusername"
+        android:layout_marginLeft="9dip"
+        android:layout_marginTop="7dip"
+        android:visibility="invisible" /> 
+
+    <TextView
+        android:id="@+id/twtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twusername"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@+id/twimage"
+        android:text="Text"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:textStyle="bold" >
+    </TextView>
+
+
+
+</RelativeLayout>
